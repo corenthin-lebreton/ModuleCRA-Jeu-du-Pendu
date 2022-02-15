@@ -7,12 +7,15 @@ const Pagejeu = () => {
     const listeMots = ["python", "javascript", "informatique"]
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toUpperCase().split("")
          
+    let mot_aleatoire = listeMots[Math.floor(Math.random() * listeMots.length)]
+    // let mot_a_trouver = mot_aleatoire.replace(mot_aleatoire, '_')
+
 
 
     return (
         <>
             <Button variant="primary">
-                    ESSAIS RESTANT <Badge bg="secondary">9</Badge>
+                    ESSAIS RESTANTS <Badge bg="secondary">8</Badge>
                     <span className="visually-hidden">unread messages</span>
              </Button>
              <p></p>
