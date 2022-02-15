@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Component } from 'react/cjs/react.production.min';
 import App from './App';
-import pageJeu from './Component/pageJeu'
+import Pagejeu from './Component/Pagejeu'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Interface from './Component/Interface';
 ReactDOM.render(
@@ -11,7 +10,7 @@ ReactDOM.render(
       <Router>
         <Routes>
           <Route path="/" element={<Interface />} />
-          <Route path="/jeu" element = {<pageJeu />} />
+          <Route path="/jeu" element = {<Pagejeu />} />
         </Routes>
       </Router>
     </main>
